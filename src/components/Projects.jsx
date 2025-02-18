@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Employee Manage System",
+    name: "Employee Management System",
     technologies: "SpringBoot, Angular, MySql",
     image: EmpImage,
     github: "https://github.com/nazeer-shaik-01/Employee-Management",
