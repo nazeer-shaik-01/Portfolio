@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c5b7cb2c.css",
-    "main.js": "/Portfolio/static/js/main.75b5a28f.js",
+    "main.js": "/Portfolio/static/js/main.64560027.js",
     "static/media/nazeer.png": "/Portfolio/static/media/nazeer.eacbffb9604833defd5d.png",
     "static/media/MySql.Certification.pdf": "/Portfolio/static/media/MySql.Certification.a9091ae2c68ac3e67faa.pdf",
     "static/media/Java_certifucation.png": "/Portfolio/static/media/Java_certifucation.c8331288594d01aab16b.png",
     "static/media/Algorthims.png": "/Portfolio/static/media/Algorthims.095fd49371f148e20f51.png",
     "static/media/MachineLearning_Certificate.pdf": "/Portfolio/static/media/MachineLearning_Certificate.fa59125d6b53eb9b7181.pdf",
     "static/media/Resume1.pdf": "/Portfolio/static/media/Resume1.7baec6ed3f42f967c7ea.pdf",
+    "static/media/Goldman.pdf": "/Portfolio/static/media/Goldman.b76f8e30fc36c358a945.pdf",
     "static/media/Generative AI_Certification.pdf": "/Portfolio/static/media/Generative AI_Certification.e8e6c4d054cb266f9f99.pdf",
     "static/media/emp-mng-sys.png": "/Portfolio/static/media/emp-mng-sys.0cfb4fa42e3789c7b1c0.png",
     "static/media/blogSys-img.png": "/Portfolio/static/media/blogSys-img.9c562cbfd8a8da25b09f.png",
@@ -16,10 +17,10 @@
     "static/media/hacker.png": "/Portfolio/static/media/hacker.e0b25d6e828d776241ff.png",
     "index.html": "/Portfolio/index.html",
     "main.c5b7cb2c.css.map": "/Portfolio/static/css/main.c5b7cb2c.css.map",
-    "main.75b5a28f.js.map": "/Portfolio/static/js/main.75b5a28f.js.map"
+    "main.64560027.js.map": "/Portfolio/static/js/main.64560027.js.map"
   },
   "entrypoints": [
     "static/css/main.c5b7cb2c.css",
-    "static/js/main.75b5a28f.js"
+    "static/js/main.64560027.js"
   ]
 }

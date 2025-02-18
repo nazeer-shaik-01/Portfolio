@@ -12,7 +12,7 @@ import EmpImage from "../assets/emp-mng-sys.png";
 const projects = [
   {
     id: 1,
-    name: "Blog Sysem",
+    name: "Blog System",
     technologies: "SpringBoot, Angular, MySql",
     image: BlogImage,
     github: "https://github.com/nazeer-shaik-01/blogSystem",
