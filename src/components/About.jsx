@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import LinkedInImage from '../assets/linkedin.png';
 import GitHubImage from '../assets/github.png';
 import MailImage from '../assets/mail.png';
-import ResumePDF from '../assets/Resume1.pdf';
+// import ResumePDF from '../assets/Resume1.pdf';
 import LeetCodeImage from '../assets/LeetCode.png';
 import GeeksforGeeksImage from '../assets/gfg.png';
 
@@ -77,7 +77,7 @@ With a keen interest in continuous learning and development, I am always explori
                 className="transform transition-transform duration-300 hover:scale-105">
                 <img src={LeetCodeImage} alt="LeetCode" className="w-10 h-10" />
               </a>
-              <a href={ResumePDF} target="_blank" rel="noopener noreferrer"
+              <a href="https://drive.google.com/file/d/1eArb9uRQ1qZW6oWlXW5DQSysWsCkaXby/view" target="_blank" rel="noopener noreferrer"
                 className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-105">
                 View Resume
               </a>
