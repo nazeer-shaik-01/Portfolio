@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  // Animation variants for Framer Motion
   const containerVariants = {
     hidden: {},
     visible: {
@@ -40,11 +41,11 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
+      {/* Background decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-dark to-dark-light"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
 
-      {/* Animated background elements */}
+      {/* Animated background shapes */}
       <div className="absolute inset-0">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
@@ -74,6 +75,7 @@ const Hero = () => {
       </div>
 
       <div className="container-custom section-padding relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* Left side content */}
         <motion.div
           className="text-center md:text-left"
           variants={containerVariants}
@@ -92,7 +94,7 @@ const Hero = () => {
             className="text-xl md:text-2xl text-gray-300 mb-4 font-medium"
             variants={textVariant}
           >
-            Full-Stack Web Developer 
+            Full-Stack Web Developer
           </motion.p>
           <motion.p
             className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto md:mx-0"
@@ -102,19 +104,21 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-center mr-24"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             variants={textVariant}
           >
-<motion.a
-  href="https://docs.google.com/document/d/1x4Er0Hs6r1jy4qtrtcbx0VcHxKjuNNje/edit?usp=drivesdk&ouid=103930621407385888549&rtpof=true&sd=true"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
-  whileHover={{ scale: 1.05, y: -2 }}
-  whileTap={{ scale: 0.95 }}
->
-  View Resume
-</motion.a>
+            {/* --- CORRECTED RESUME LINK --- */}
+            {/* This link points to the file in the 'public' folder. */}
+            <motion.a
+              href="/nazeer_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View Resume
+            </motion.a>
 
             <motion.a
               href="#contact"
