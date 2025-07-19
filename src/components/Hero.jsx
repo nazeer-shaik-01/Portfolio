@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  // Animation variants for Framer Motion
+  // Animation variants for Framer Motion 
   const containerVariants = {
     hidden: {},
     visible: {
@@ -107,10 +107,9 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             variants={textVariant}
           >
-            {/* --- CORRECTED RESUME LINK --- */}
-            {/* This link points to the file in the 'public' folder. */}
+            {/* Resume Button */}
             <motion.a
-              href="/nazeer_resume.pdf"
+              href="/nazeer_resume..pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
