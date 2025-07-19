@@ -11,7 +11,7 @@ const AboutSection = () => {
     },
     {
       institution: "Hyderabad Institute of Excellence",
-      period: "2020-2020",
+      period: "2020-2022",
       degree: "MPC",
       grade: "94%",
       icon: "📘"
