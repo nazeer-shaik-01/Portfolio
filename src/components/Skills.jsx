@@ -4,23 +4,33 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["HTML", "CSS", "Angular.js"],
-      icon: "🎨"
+      icon: "🎨",
+      skills: ["HTML5", "CSS3", "Angular.js"]
     },
     {
       title: "Backend",
-      skills: ["SpringBoot", "MySql"],
-      icon: "⚙️"
+      icon: "⚙️",
+      skills: ["Spring Boot", "MySQL", "SQL"]
     },
     {
       title: "Languages",
-      skills: ["Java", "C"],
-      icon: "💻"
+      icon: "💻",
+      skills: ["Java", "C"]
     },
     {
       title: "Tools",
-      skills: ["Git", "GitHub", "Postman", "intelIJ"],
-      icon: "🛠️"
+      icon: "�️",
+      skills: ["Git", "GitHub", "IntelliJ IDEA", "VS Code", "Postman"]
+    },
+    {
+      title: "Core Concepts",
+      icon: "🔬",
+      skills: ["Data Structures & Algorithms", "Software Design", "RESTful Web Services"]
+    },
+    {
+      title: "Professional Skills",
+      icon: "✨",
+      skills: ["Problem Solving", "Team Collaboration", "Project Management"]
     }
   ];
 
@@ -59,7 +69,7 @@ const Skills = () => {
         </motion.h2>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -68,26 +78,29 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
-              className="w-full max-w-md mx-auto bg-dark rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 border border-gray-800 hover:border-primary/30 group"
+              className="bg-dark rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 border border-gray-800 hover:border-primary/30 group"
               variants={cardVariants}
-              whileHover={{ scale: 1.03, y: -10 }}
+              whileHover={{ scale: 1.02 }}
             >
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="text-4xl mb-3">{category.icon}</div>
-                <h3 className="text-2xl font-semibold text-white mb-6 group-hover:text-primary transition">
-                  {category.title}
-                </h3>
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-3xl">{category.icon}</span>
+                  <h3 className="text-xl font-semibold text-white group-hover:text-primary transition">
+                    {category.title}
+                  </h3>
+                </div>
 
-                <div className="flex flex-col items-center gap-3 w-full">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <motion.span
+                    <motion.div
                       key={skillIndex}
-                      className="px-5 py-2 bg-primary/20 text-primary text-sm rounded-full border border-primary/30 transition-all duration-200 hover:bg-primary hover:text-white w-full max-w-[250px] text-center"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                      className="bg-dark-light rounded-full px-4 py-2 border border-gray-800 hover:border-primary/30 transition-all duration-300"
+                      whileHover={{ scale: 1.05, y: -2 }}
                     >
-                      {skill}
-                    </motion.span>
+                      <span className="text-primary text-sm">
+                        {skill}
+                      </span>
+                    </motion.div>
                   ))}
                 </div>
               </div>

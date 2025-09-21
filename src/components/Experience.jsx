@@ -3,18 +3,16 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
-      title: "Game DevUtopia Club - Member",
-      period: "2024-Present",
-      location: "PICT's Game Dev Club",
-      description: "Active member contributing to game development projects and learning new technologies.",
-      icon: "🎮"
-    },
-    {
-      title: "Impetus & Concepts 2025 - Organizing Team",
-      period: "2024",
-      location: "PICT",
-      description: "Handled tech event logistics and promotions for the annual technical festival.",
-      icon: "📅"
+      title: "Java Developer Intern",
+      company: "Azure Skynet Solutions Pvt. Ltd.",
+      period: "March 2025 – May 2025",
+      location: "Hyderabad",
+      responsibilities: [
+        "Built responsive web applications using real-world project requirements and modern frameworks.",
+        "Applied best practices in frontend and backend development for scalable web solutions.",
+        "Collaborated with team to debug issues and enhance UI/UX performance.",
+        "Contributed actively to project goals through clean code and timely feature delivery."
+      ]
     }
   ];
 
@@ -67,22 +65,25 @@ const Experience = () => {
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, y: -5 }}
               >
-                <div className="flex items-start gap-4">
-                  <motion.div 
-                    className="text-3xl"
-                    whileHover={{ scale: 1.2, rotate: 10 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    {exp.icon}
-                  </motion.div>
-                  <div className="flex-1">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                <div className="flex flex-col space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div>
                       <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
-                      <span className="text-primary font-medium">{exp.period}</span>
+                      <p className="text-primary font-medium">{exp.company}</p>
                     </div>
-                    <p className="text-gray-400 mb-3">{exp.location}</p>
-                    <p className="text-gray-300">{exp.description}</p>
+                    <div className="text-gray-400">
+                      <p>{exp.location}</p>
+                      <p>{exp.period}</p>
+                    </div>
                   </div>
+                  
+                  <ul className="list-disc list-inside text-gray-300 space-y-2 ml-2">
+                    {exp.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="leading-relaxed">
+                        {resp}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}

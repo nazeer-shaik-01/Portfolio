@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Achievements from './components/Achievements';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Projects />
       <Skills />
+      <Achievements />
       <Contact />
       <Footer />
     </div>

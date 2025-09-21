@@ -4,116 +4,71 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
-  const [selectedFilter, setSelectedFilter] = useState('All');
 
   const projects = [
     {
-      title: "HerbiVerse",
-      description: "Interactive Herbal Learning Hub with 2D/3D models for educational purposes.",
-      detailedDescription: "HerbiVerse is a comprehensive educational platform that combines traditional herbal knowledge with modern web technologies. The application features interactive 2D and 3D models of various herbs, allowing users to explore their properties, uses, and benefits in an immersive environment. Built with React and Three.js, it provides an engaging learning experience for students and enthusiasts of herbal medicine.",
-      tech: ["React", "Tailwind", "Node", "Express", "Three.js", "MongoDB"],
-      domain: "3D/Educational",
+      title: "SkyLink-Booking-Portal",
+      description: "A comprehensive flight booking system for managing airline reservations.",
+      detailedDescription: "A modern flight booking portal that allows users to search, book, and manage airline reservations. Features include user authentication, flight search, booking management, and secure payment processing.",
+      tech: ["Full Stack", "Database Management", "User Authentication"],
       features: [
-        "Interactive 3D herb models with detailed animations",
-        "Educational insights with plant care tips, benefits, and usage",
-        "Comprehensive herb database with search functionality",
-        "Educational modules, care tips, and medicinal uses"
+        "Flight search and booking system",
+        "User authentication and profile management",
+        "Booking history and management",
+        "Secure payment processing"
       ],
-      image: "/herbiverse.jpg",
-      live: "https://herbiverse.vercel.app/",
-      github: "https://github.com/HimeshLaddha/Herbiverse"
-    },
-    {
-      title: "QuickStay",
-      description: "Hotel booking system with role-based authentication (Currently under development).",
-      detailedDescription: "QuickStay is a comprehensive hotel booking platform designed to streamline the reservation process for both guests and hotel administrators. The system features role-based authentication, allowing different access levels for customers, hotel staff, and administrators. Currently in development, it aims to provide a complete solution for hotel management and booking.",
-      tech: ["React", "Tailwind", "Node", "Express", "MongoDB"],
-      domain: "Full-Stack",
-      features: [
-        "Role-based login system for guests and admins",
-        "Room listings with availability tracking",
-        "Admin dashboard to manage hotels, bookings, and users",
-        "Search and filter functionality for users",
-        "Planned Stripe integration for secure payments"
-      ],
-      image: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=500",
-      live: "https://hotel-booking-frontend-pink-delta.vercel.app/",
-      github: "https://github.com/HimeshLaddha/Hotel_Booking"
-    },
-    {
-      title: "QuickChat",
-      description: "Real-time chat application with image sharing capabilities and modern UI.",
-      detailedDescription: "QuickChat is a modern real-time messaging application built with the MERN stack and Socket.io. It enables users to communicate instantly with features like image sharing, typing indicators, and message status updates. The application focuses on providing a seamless chat experience with a clean, intuitive interface.",
-      tech: ["React", "Tailwind", "Node", "Express", "MongoDB", "Socket.io"],
-      domain: "Full-Stack",
-      features: [
-        "Instant real-time communication using WebSockets",
-        "Image sharing with inline previews",
-        "Secure user authentication and session management",
-        "Minimal, modern UI",
-        "Responsive chat interface"
-      ],
-      image: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=500",
-      live: "https://chat-app-weld-five-80.vercel.app/",
-      github: "https://github.com/HimeshLaddha/Chat_App"
-    },
-    {
-      title: "PassOp",
-      description: "Basic password manager built with encryption and a clean UI.",
-      detailedDescription: "PassOp is a simple password management application that allows users to securely store and manage their login credentials. Built using the MERN stack, it focuses on basic functionality like saving passwords, organizing them by category, and ensuring data is encrypted using built-in Node.js crypto modules. It's an ideal starter project to demonstrate secure data handling and user authentication.",
-      tech: ["MERN stack"],
-      domain: "MERN-Stack",
-      features: [
-        "Secure password storage with basic encryption",
-        "Simple UI to add, view, and delete passwords",
-        "Category-wise password organization",
-        "Copy-to-clipboard functionality for convenience"
-      ],
-      image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/AirLine.jpg",
       live: false,
-      github: "https://github.com/HimeshLaddha/Password_Manager"
+      github: "https://github.com/nazeer-shaik-01/SkyLink-Booking-Portal"
     },
     {
-      title: "To Do List",
-      description: "A productivity app for managing daily tasks and projects.",
-      detailedDescription: "A comprehensive task management application that helps users organize their daily activities and projects. Features include task categorization, priority levels, due dates, and progress tracking.",
-      tech: ["React", "Node.js", "MongoDB"],
-      domain: "MERN-Stack",
+      title: "Lost-and-Found-System",
+      description: "Digital platform for managing lost and found items in a college environment.",
+      detailedDescription: "A comprehensive system designed to help college students and staff report, track, and claim lost items efficiently. The platform streamlines the process of reuniting lost items with their owners within the college community.",
+      tech: ["Web Development", "Database Design", "User Interface"],
       features: [
-        "Task categorization",
-        "Every task is created with a unique identifier, ensuring clean operations like edit/delete.",
-        "Users can toggle completion status for better task tracking.",
-        "Show/Hide Completed Task"
+        "Lost item reporting system",
+        "Found item registration",
+        "Search and matching functionality",
+        "Claim verification process"
       ],
-      image: "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg?auto=compress&cs=tinysrgb&w=500",
+      image: "/Loss&Found.jpg",
       live: false,
-      github: "https://github.com/HimeshLaddha/Todo_List"
+      github: "https://github.com/nazeer-shaik-01/Lost-and-Found-System-for-College"
     },
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio website with modern design and animations.",
-      detailedDescription: "A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations, dark theme, and comprehensive sections showcasing skills, projects, and experience.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      domain: "Frontend",
+      title: "Blog System",
+      description: "A feature-rich blogging platform for content creation and management.",
+      detailedDescription: "A modern blogging system that enables users to create, publish, and manage blog posts. The platform includes features for user authentication, content management, and interaction through comments.",
+      tech: ["Content Management", "User Authentication", "Database"],
       features: [
-        "Responsive design with mobile-first approach",
-        "Smooth animations and micro-interactions",
-        "Dark theme with blue accents",
-        "Contact form integration"
+        "User authentication system",
+        "Blog post creation and editing",
+        "Comment functionality",
+        "Content management dashboard"
       ],
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=500",
-      live: "https://himesh-portfolio-delta.vercel.app/",
-      github: "https://github.com/HimeshLaddha/portfolio"
+      image: "/BlogSystem.png",
+      live: false,
+      github: "https://github.com/nazeer-shaik-01/blogSystem"
+    },
+    {
+      title: "Online-Banking-System",
+      description: "Secure and efficient online banking platform for managing financial transactions.",
+      detailedDescription: "A comprehensive online banking system that provides users with secure access to their accounts, transaction management, and various banking services. Features include secure authentication, transaction processing, and account management.",
+      tech: ["Security", "Transaction Processing", "User Authentication"],
+      features: [
+        "Secure user authentication",
+        "Transaction processing and history",
+        "Account management",
+        "Balance tracking and statements"
+      ],
+      image: "/BankingSystem.jpg",
+      live: false,
+      github: "https://github.com/nazeer-shaik-01/Online-Banking-System"
     }
   ];
 
-  // Get unique domains for filter options
-  const domains = ['All', ...new Set(projects.map(project => project.domain))];
-
-  // Filter projects based on selected domain
-  const filteredProjects = selectedFilter === 'All' 
-    ? projects 
-    : projects.filter(project => project.domain === selectedFilter);
+  const filteredProjects = projects;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -189,16 +144,7 @@ const Projects = () => {
     }
   };
 
-  const filterVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3
-      }
-    }
-  };
+
 
   // Show only first 4 projects in the main view
   const featuredProjects = projects.slice(0, 4);
@@ -516,43 +462,11 @@ const Projects = () => {
                 </button>
               </div>
 
-              {/* Filter Section */}
-              <motion.div
-                className="p-6 border-b border-gray-800"
-                variants={filterVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                <div className="flex flex-wrap gap-3">
-                  <span className="text-gray-300 font-medium mr-2">Filter by domain:</span>
-                  {domains.map((domain) => (
-                    <motion.button
-                      key={domain}
-                      onClick={() => setSelectedFilter(domain)}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                        selectedFilter === domain
-                          ? 'bg-primary text-white shadow-lg shadow-primary/25'
-                          : 'bg-dark-light text-gray-300 hover:bg-dark-lighter hover:text-white border border-gray-700'
-                      }`}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      {domain}
-                      {domain !== 'All' && (
-                        <span className="ml-2 text-xs opacity-75">
-                          ({projects.filter(p => p.domain === domain).length})
-                        </span>
-                      )}
-                    </motion.button>
-                  ))}
-                </div>
-              </motion.div>
-
               {/* Projects Grid */}
               <div className="p-6">
                 <AnimatePresence mode="wait">
                   <motion.div
-                    key={selectedFilter}
+                    key="project-grid"
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                     variants={containerVariants}
                     initial="hidden"
@@ -561,7 +475,7 @@ const Projects = () => {
                   >
                     {filteredProjects.map((project, index) => (
                       <motion.div
-                        key={`${project.title}-${selectedFilter}`}
+                        key={project.title}
                         className="bg-dark-light rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 border border-gray-800 hover:border-primary/30 group cursor-pointer"
                         variants={cardVariants}
                         whileHover={{ scale: 1.03, y: -5 }}

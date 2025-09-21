@@ -100,7 +100,7 @@ const Hero = () => {
             className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto md:mx-0"
             variants={textVariant}
           >
-            "Engineer at heart, creator in soul — I build modern digital experiences where performance meets creativity. Whether it's clean code or captivating UI, I craft every project like a piece of art meant to inspire, engage, and leave a mark."
+            "A Full-Stack Developer focused on translating complex business requirements into high-performance web applications. I specialize in the Java, Spring Boot, and Angular ecosystems, delivering secure RESTful APIs and intuitive front-end experiences. My goal is to engineer solutions that are not only powerful but also clean and maintainable."
           </motion.p>
 
           <motion.div
@@ -109,7 +109,7 @@ const Hero = () => {
           >
             {/* Resume Button */}
             <motion.a
-              href="/nazeer_resume.pdf"
+              href="/nazeer_resume..pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
@@ -132,18 +132,29 @@ const Hero = () => {
 
         {/* Right side (Image) */}
         <motion.div
-          className="flex-1"
+          className="flex-1 relative"
           variants={imageVariant}
           initial="hidden"
           animate="visible"
         >
-          <motion.img
-            src="/nazeer.jpg"
-            alt="Shaik Nazeer"
-            className="mx-4 w-70 h-80 max-w-sm md:mx-0 rounded-full border-4 border-primary/50 shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-primary/40 hover:shadow-2xl hover:border-blue-500"
-            whileHover={{ scale: 1.18, rotate: 1 }}
-            whileTap={{ scale: 0.95 }}
-          />
+          <div className="relative mx-4 md:mx-0">
+            {/* Glow effect behind the image */}
+            <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-[30%] transform scale-105"></div>
+            
+            {/* Image container with border */}
+            <div className="relative">
+              <motion.img
+                src="/nazeer.jpg"
+                alt="Shaik Nazeer"
+                className="w-[300px] h-[400px] md:w-[340px] md:h-[460px] lg:w-[380px] lg:h-[520px] object-cover object-[center_top] rounded-[30%] border-4 border-primary/50 shadow-xl transition-all duration-500 hover:shadow-primary/40 hover:shadow-2xl hover:border-blue-500"
+                whileHover={{ scale: 1.05, y: -5 }}
+                whileTap={{ scale: 0.98 }}
+              />
+              
+              {/* Vignette overlay */}
+              <div className="absolute inset-0 rounded-[30%] bg-gradient-to-tr from-dark/10 via-transparent to-primary/10 pointer-events-none"></div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

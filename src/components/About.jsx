@@ -87,7 +87,7 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              I have a keen interest in System Design, both High-Level Design (HLD) and Low-Level Design (LLD). My problem-solving skills are sharpened through consistent practice on LeetCode and GeeksforGeeks, where I’ve solved over 500+ data structures and algorithms (DSA) problems and secured a top 10% rating in contests on LeetCode.
+              I have a keen interest in System Design, both High-Level Design (HLD) and Low-Level Design (LLD). My problem-solving skills are sharpened through consistent practice on LeetCode and GeeksforGeeks, where I've solved over 500+ data structures and algorithms (DSA) problems and secured a top 10% rating in contests on LeetCode.
             </motion.p>
             
             <motion.p
