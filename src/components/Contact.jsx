@@ -59,15 +59,15 @@ const Contact = () => {
       link: "mailto:nazeer.dev@hotmail.com"
     },
     {
-      icon: "💼",
+      icon: "/linkedin.svg", // LinkedIn SVG path
       label: "LinkedIn",
-      value: "https://www.linkedin.com/in/nazeershaik049/",
+      value: "nazeershaik049",
       link: "https://www.linkedin.com/in/nazeershaik049/"
     },
     {
-      icon: "💻",
+      icon: "/github.svg", // GitHub SVG path
       label: "GitHub",
-      value: "https://github.com/nazeer-shaik-01",
+      value: "nazeer-shaik-01",
       link: "https://github.com/nazeer-shaik-01"
     }
   ];
@@ -228,11 +228,15 @@ const Contact = () => {
                   whileHover={{ scale: 1.02, x: 5 }}
                 >
                   <motion.div
-                    className="text-2xl"
+                    className="w-8 h-8 flex-shrink-0"
                     whileHover={{ scale: 1.2, rotate: 10 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    {info.icon}
+                    {info.icon.endsWith('.svg') ? (
+                      <img src={info.icon} alt={`${info.label} icon`} className="w-full h-full object-contain" />
+                    ) : (
+                      <span className="text-2xl">{info.icon}</span>
+                    )}
                   </motion.div>
                   <div>
                     <p className="text-gray-400 text-md">{info.label}</p>

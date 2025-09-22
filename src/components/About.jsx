@@ -5,16 +5,16 @@ const AboutSection = () => {
     {
       institution: "Guru Nanak Institutions Technical Campus",
       period: "2022-2026",
-      degree: "B.E. in CSE",
+      degree: "B. Tech in Computer Science and Engineering ",
       grade: "CGPA: 8.02",
-      icon: "🎓"
+      logo: "/gni.jpg", // College logo
     },
     {
       institution: "Hyderabad Institute of Excellence",
       period: "2020-2022",
-      degree: "MPC",
+      degree: "Mathematics, Physics, and Chemistry",
       grade: "94%",
-      icon: "📘"
+      logo: "/hie.jpg", // College logo
     },
   ];
 
@@ -114,7 +114,13 @@ const AboutSection = () => {
                   whileHover={{ scale: 1.02, y: -4 }}
                 >
                   <div className="flex items-start gap-4">
-                    <div className="text-2xl">{edu.icon}</div>
+                    <div className="w-12 h-12 flex-shrink-0">
+                      <img
+                        src={edu.logo}
+                        alt={`${edu.institution} logo`}
+                        className="w-full h-full object-contain rounded-full"
+                      />
+                    </div>
                     <div className="flex-1">
                       <div className="flex flex-col sm:flex-row sm:justify-between mb-1">
                         <h3 className="text-lg font-semibold text-white">{edu.institution}</h3>
