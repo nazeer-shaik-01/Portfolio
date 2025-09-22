@@ -3,40 +3,29 @@ import { motion } from 'framer-motion';
 const AboutSection = () => {
   const education = [
     {
-      institution: "Guru Nanak Institutions Technical Campus",
-      period: "2022-2026",
-      degree: "B. Tech in Computer Science and Engineering ",
+      institution: "Guru Nanak Institute of Technical Campus",
+      period: "2022–2026",
+      degree: "B.Tech in Computer Science and Engineering",
       grade: "CGPA: 8.02",
-      logo: "/gni.jpg", // College logo
+      logo: "/gni.jpg",
     },
     {
       institution: "Hyderabad Institute of Excellence",
-      period: "2020-2022",
+      period: "2020–2022",
       degree: "Mathematics, Physics, and Chemistry",
       grade: "94%",
-      logo: "/hie.jpg", // College logo
+      logo: "/hie.jpg",
     },
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -25 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.6
-      }
-    }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
   };
 
   return (
@@ -67,38 +56,39 @@ const AboutSection = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              I am currently pursuing a B.Tech in Computer Science at Guru Nanak Institute of Technical Campus. With a solid foundation in software engineering principles and system design, I have built strong analytical and development skills that support my journey toward becoming a well-rounded full-stack developer.
+              I am currently pursuing a <strong>B.Tech in Computer Science and Engineering</strong> at <strong>Guru Nanak Institute of Technical Campus (2022–2026)</strong>, with a solid foundation in software engineering principles, system design, and full-stack development. My academic and project experience has strengthened my <strong>analytical, problem-solving, and development skills</strong>, enabling me to build scalable and high-performance applications.
             </motion.p>
 
             <motion.p
               className="text-lg text-gray-300 leading-relaxed mb-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              I am proficient in front-end technologies like HTML, CSS, JavaScript, and Angular, as well as backend development using Spring Boot. My experience includes RESTful API integration, MySQL database design, and using Java Persistence API (JPA) for ORM-based operations. I also have hands-on experience in building end-to-end applications with a focus on scalability and performance.
+              I am proficient in <strong>front-end technologies</strong> such as HTML, CSS, JavaScript, and Angular, as well as <strong>back-end development</strong> using Spring Boot. I have hands-on experience with <strong>RESTful API design and MySQL database modeling</strong>, successfully building end-to-end applications with a focus on reliability and maintainability.
             </motion.p>
 
             <motion.p
-              className="text-lg text-gray-300 leading-relaxed mb-2"
+              className="text-lg text-gray-300 leading-relaxed mb-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              I have a keen interest in System Design, both High-Level Design (HLD) and Low-Level Design (LLD). My problem-solving skills are sharpened through consistent practice on LeetCode and GeeksforGeeks, where I've solved over 500+ data structures and algorithms (DSA) problems and secured a top 10% rating in contests on LeetCode.
+              I have a keen interest in <strong>System Design</strong>, both <strong>High-Level Design (HLD)</strong> and <strong>Low-Level Design (LLD)</strong>. To enhance my problem-solving skills, I actively practice on platforms like <strong>LeetCode</strong> and <strong>GeeksforGeeks</strong>, having solved <strong>500+ DSA problems</strong> and achieved a <strong>top 10% ranking in LeetCode contests</strong>.
             </motion.p>
-            
+
             <motion.p
-              className="text-lg text-gray-200 leading-relaxed mb-10 text-left mt-5"
+              className="text-lg text-gray-200 leading-relaxed mb-10 mt-5"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Here's a snapshot of my educational journey that shaped the foundation I'm standing on today:
+              Here’s a snapshot of my educational journey that shaped the foundation I’m standing on today:
             </motion.p>
+
             <motion.div
               className="space-y-6 text-left"
               variants={containerVariants}
