@@ -19,7 +19,7 @@ const Skills = () => {
     },
     {
       title: "Tools",
-      icon: "�️",
+      icon: "🔧",
       skills: ["Git", "GitHub", "IntelliJ IDEA", "VS Code", "Postman"]
     },
     {
