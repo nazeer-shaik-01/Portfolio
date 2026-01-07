@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: "/linkedin.svg", // LinkedIn SVG path
       label: "LinkedIn",
-      value: "nazeershaik049",
+      value: "Nazeer Shaik",
       link: "https://www.linkedin.com/in/nazeershaik049/"
     },
     {

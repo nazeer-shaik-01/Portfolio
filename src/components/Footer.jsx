@@ -18,7 +18,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            © 2025 Shaik Nazeer 
+            © 2026 Shaik Nazeer 
           </motion.p>
         </div>
       </div>

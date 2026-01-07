@@ -109,7 +109,7 @@ const Hero = () => {
           >
             {/* Resume Button */}
             <motion.a
-              href="/nazeer_resume.pdf"
+              href="/Nazeer_Shaik_SDE1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
